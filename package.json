@@ -11,9 +11,11 @@
     "preview": "nuxt preview .playground",
     "lint": "eslint ."
   },
+  "dependencies": {
+    "@pinia/nuxt": "^0.5.3"
+  },
   "devDependencies": {
     "@nuxt/eslint": "latest",
-    "@pinia/nuxt": "^0.5.3",
     "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
     "typescript": "^5.5.3",
