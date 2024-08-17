@@ -12,11 +12,11 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@pinia/nuxt": "^0.5.3"
+    "@pinia/nuxt": "^0.5.3",
+    "@nuxtjs/tailwindcss": "^6.12.1"
   },
   "devDependencies": {
     "@nuxt/eslint": "latest",
-    "@nuxtjs/tailwindcss": "^6.12.1",
     "eslint": "^9.7.0",
     "nuxt": "^3.12.4",
     "typescript": "^5.5.3",
