@@ -15,10 +15,13 @@ export const useProductStore = defineStore('product', () => {
     products.value = new_products
   }
 
-  async function fetch_products({ to_state }) {
+  async function fetch_products({ to_state, id, ids, category_id }) {
     try {
-      const response = await fetch(endpoints.products)
-      const data = await response.json()
+      const data = await $fetch(endpoints.products
+        + (id ? `/${id}` : '')
+        + (ids ? `?ids=${ids.join(',')}` : '')
+        + (category_id ? `?category_id=${category_id}` : '')
+      )
 
       if (to_state)
         set_products(data)
