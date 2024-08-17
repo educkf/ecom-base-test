@@ -1,3 +1,3 @@
 <template>
-  <HelloWorld />
+  <p>ecom-base</p>
 </template>

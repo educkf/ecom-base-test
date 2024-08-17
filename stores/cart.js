@@ -43,6 +43,10 @@ export const useCartStore = defineStore('cart', () => {
       // - Number(total_discount.value)
   })
 
+  const item_in_cart = computed(() => {
+    return (id) => cart.value.find((i) => i.id === id)
+  })
+
   // ACTIONS
   function set_cart(new_cart) {
     cart.value = new_cart
@@ -79,6 +83,7 @@ export const useCartStore = defineStore('cart', () => {
     total,
     set_cart,
     add_item,
+    item_in_cart,
     remove_item,
     update_item,
     update_quantity
